@@ -24,6 +24,9 @@
             <?php get_template_part( 'template-parts/blocks/what_game' );?>
         <?php endif; ?>
 
+        <?php if( get_row_layout() == 'timeline' ): ?>
+            <?php get_template_part( 'template-parts/blocks/timeline' );?>
+        <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
 

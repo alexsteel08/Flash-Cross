@@ -542,3 +542,83 @@ and (orientation: landscape) {
     margin-right: 30px;
 }
 /*what_game end*/
+
+
+/*timeline*/
+.timeline_items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.timeline_items:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #C4C4C4;
+    top: 39px;
+    left: -20px;
+}
+.timeline_items:before {
+    position: absolute;
+    content: '';
+    left: -33px;
+    top: 35px;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.67693 0.669796L5.22196 0.161438C5.45274 -0.0538127 5.82591 -0.0538127 6.05424 0.161438L10.8269 4.61072C11.0577 4.82597 11.0577 5.17403 10.8269 5.38699L6.05424 9.83856C5.82346 10.0538 5.45028 10.0538 5.22196 9.83856L4.67693 9.3302C4.4437 9.11266 4.44861 8.75773 4.68675 8.54477L7.64513 5.91596H0.58922C0.262694 5.91596 0 5.67094 0 5.36638V4.63362C0 4.32906 0.262694 4.08404 0.58922 4.08404H7.64513L4.68675 1.45523C4.44616 1.24227 4.44125 0.887337 4.67693 0.669796Z' fill='%2300D198'/%3E%3C/svg%3E%0A");
+}
+.timeline_item {
+    flex: 0 0 25%;
+    padding-right: 80px;
+}
+.timeline_item_number {
+    position: relative;
+}
+.timeline_item_number span {
+    color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+.timeline_item_number:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -17px;
+    height: 53px;
+    width: 43px;
+    z-index: 1;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='43' height='53' viewBox='0 0 43 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M37.1597 17.8029C37.1597 8.11357 30.5272 1.70284 21.3858 1.57405V1.57294C21.3825 1.57294 21.3797 1.57349 21.3764 1.57349C21.3731 1.57349 21.3703 1.57294 21.367 1.57294V1.57405C12.225 1.70284 5.59253 8.11357 5.59253 17.8029C5.59253 20.4421 6.23085 22.8486 7.34402 24.9287H7.33737C8.59128 27.5773 10.5688 30.2225 13.2523 32.911L21.3709 41.0454L21.3764 41.0399L21.3819 41.0454L29.5005 32.911C32.184 30.2225 34.1615 27.5773 35.4154 24.9287H35.4088C36.5214 22.8486 37.1597 20.4421 37.1597 17.8029Z' fill='%2300D198'/%3E%3Ccircle cx='21.5' cy='49.5' r='3.5' fill='%2300D198'/%3E%3C/svg%3E%0A");    background-repeat: no-repeat;
+}
+.timeline_item_title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #40B6FB;
+    padding: 50px 0 20px 0;
+}
+.timeline_item_text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+}
+.timeline_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 57px;
+    margin-bottom: 100px;
+}
+
+
+/*timeline end*/
