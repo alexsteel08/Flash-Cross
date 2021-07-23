@@ -2,7 +2,7 @@
     <div class="about_game_block">
         <div class="about_game_content">
             <?php if( get_sub_field('about_game_title') ): ?>
-                <div class="about_game_title">
+                <div class="about_game_title title">
                     <?php the_sub_field('about_game_title'); ?>
                 </div>
             <?php endif; ?>
@@ -13,7 +13,7 @@
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('about_game_text') ): ?>
-                    <div class="about_game_decr">
+                    <div class="about_game_decr text">
                         <?php the_sub_field('about_game_text'); ?>
                     </div>
                 <?php endif; ?>

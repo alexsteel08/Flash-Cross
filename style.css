@@ -81,6 +81,9 @@ table, td, th {
 .wrapper {
     min-height: 100%;
 }
+p {
+    margin-bottom: 1rem;
+}
 /*.wr {*/
     /*padding-top: 52px;*/
 /*}*/
@@ -223,6 +226,42 @@ table, td, th {
     letter-spacing: 0.05em;
     color: #FF7D6C;
 }
+.orange_btn_bg {
+    width: 280px;
+    text-align: center;
+}
+.orange_btn_bg a {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: #FF7D6C;
+    box-shadow: 5px 5px 28px rgb(145 158 167 / 30%);
+    border-radius: 50px;
+    width: 280px;
+    padding: 20px 50px;
+    text-align: center;
+}
+.title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 60px;
+}
+.title span {
+    color: #40B6FB;
+}
+.text {
+    font-family: inherit;
+    font-style: normal;
+    line-height: 150%;
+    font-size: 18px;
+    color: #333333;
+}
 /*global style end*/
 
 /*baner update*/
@@ -318,3 +357,87 @@ and (orientation: landscape) {
 }
 /*baner update end*/
 
+
+
+
+/*about_game*/
+
+.about_game {
+    position: relative;
+    padding: 100px 0;
+}
+.about_game_block {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.about_game_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_game_img {
+    margin-right: 60px;
+}
+.about_game_img img {
+    width: 180px;
+    height: auto;
+}
+/*about_game end*/
+
+
+/*location*/
+.location {
+    position: relative;
+    margin-top: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.location_content {
+    padding: 150px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location_logo_center {
+    position: absolute;
+    top: -100px;
+    /*right: 50%;*/
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.location_logo_center img {
+    height: 196px;
+    width: auto;
+}
+.location_label {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444444;
+    margin-bottom: 12px;
+    position: relative;
+}
+.location_label:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -8px;
+    background-color: #40B6FB;
+}
+.location_point {
+    margin-top: 12px;
+}
+.location_bottom {
+    justify-content: center;
+    display: flex;
+    margin-top: -50px;
+    padding-bottom: 50px;
+}
+/*location end*/

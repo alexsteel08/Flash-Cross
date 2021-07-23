@@ -8,6 +8,10 @@
             <?php get_template_part( 'template-parts/blocks/about_game' );?>
         <?php endif; ?>
 
+        <?php if( get_row_layout() == 'location' ): ?>
+            <?php get_template_part( 'template-parts/blocks/location' );?>
+        <?php endif; ?>
+
     <?php endwhile; ?>
 <?php endif; ?>
 
