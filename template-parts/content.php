@@ -27,6 +27,10 @@
         <?php if( get_row_layout() == 'timeline' ): ?>
             <?php get_template_part( 'template-parts/blocks/timeline' );?>
         <?php endif; ?>
+
+        <?php if( get_row_layout() == 'registration' ): ?>
+            <?php get_template_part( 'template-parts/blocks/registration' );?>
+        <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
 

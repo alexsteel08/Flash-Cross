@@ -622,3 +622,39 @@ and (orientation: landscape) {
 
 
 /*timeline end*/
+
+
+/*registration*/
+.registration {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.registration_content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.registration_button_link {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.registration_title {
+    color: #40B6FB;
+    margin-bottom: 40px;
+}
+.bottom_text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #444444;
+}
+/*registration end*/
