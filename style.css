@@ -83,6 +83,7 @@ table, td, th {
 }
 p {
     margin-bottom: 1rem;
+    font-size: 18px;
 }
 /*.wr {*/
     /*padding-top: 52px;*/
@@ -441,3 +442,47 @@ and (orientation: landscape) {
     padding-bottom: 50px;
 }
 /*location end*/
+
+
+/*save child*/
+.save_child {
+    position: relative;
+    padding: 120px 0;
+}
+.save_child_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save_child_logo {
+    width: 68px;
+    height: auto;
+    margin-right: 20px;
+}
+.save_child_descr {
+    display: flex;
+}
+.save_child_image {
+    flex: 0 0 40%;
+    margin-top: -130px;
+}
+.save_child_text {
+    color: #333333;
+    line-height: 150%;
+}
+.bottom_title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #FF7D6C;
+    margin-bottom: 37px;
+}
+.bottom_text {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*save child end*/

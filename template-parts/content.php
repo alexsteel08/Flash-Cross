@@ -12,6 +12,10 @@
             <?php get_template_part( 'template-parts/blocks/location' );?>
         <?php endif; ?>
 
+        <?php if( get_row_layout() == 'save_child' ): ?>
+            <?php get_template_part( 'template-parts/blocks/save_child' );?>
+        <?php endif; ?>
+
     <?php endwhile; ?>
 <?php endif; ?>
 
