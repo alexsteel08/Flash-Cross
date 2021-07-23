@@ -16,6 +16,10 @@
             <?php get_template_part( 'template-parts/blocks/save_child' );?>
         <?php endif; ?>
 
+        <?php if( get_row_layout() == 'how_to_help' ): ?>
+            <?php get_template_part( 'template-parts/blocks/how_to_help' );?>
+        <?php endif; ?>
+
     <?php endwhile; ?>
 <?php endif; ?>
 
