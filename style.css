@@ -298,6 +298,7 @@ p {
     font-size: 18px;
     line-height: 150%;
     color: #333333;
+    margin-bottom: 40px;
 }
 .baner_buttons {
     display: flex;
@@ -512,3 +513,32 @@ and (orientation: landscape) {
     border: 1px solid transparent;
 }
 /*how_to_help end*/
+
+
+/*what_game*/
+.what_game {
+    padding: 100px 0;
+}
+.what_game_title {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.what_game_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.what_game_text,
+.what_game_image {
+    flex: 0 0 50%;
+}
+.what_game_text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333333;
+    margin-right: 30px;
+}
+/*what_game end*/

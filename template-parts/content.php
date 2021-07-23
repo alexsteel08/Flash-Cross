@@ -20,6 +20,10 @@
             <?php get_template_part( 'template-parts/blocks/how_to_help' );?>
         <?php endif; ?>
 
+        <?php if( get_row_layout() == 'what_game' ): ?>
+            <?php get_template_part( 'template-parts/blocks/what_game' );?>
+        <?php endif; ?>
+
     <?php endwhile; ?>
 <?php endif; ?>
 
