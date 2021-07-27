@@ -1,4 +1,4 @@
-<section class="location" <?php if( get_sub_field('location_bg') ): ?> style="background-image: url(<?php the_sub_field('location_bg'); ?>)"<?php endif; ?>>
+<section id="location" class="location" <?php if( get_sub_field('location_bg') ): ?> style="background-image: url(<?php the_sub_field('location_bg'); ?>)"<?php endif; ?>>
     <?php if( get_sub_field('location_logo') ): ?>
         <div class="location_logo">
             <div class="location_logo_center">

@@ -16,7 +16,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 *,
 *::after,
 *::before {
@@ -29,7 +29,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #40B6FB;
 }
 ul,
 ol,
@@ -43,6 +43,11 @@ img {
 h1,h2,h3,h4,h5,h6 {
     font-weight: inherit;
     font-size: inherit;
+}
+.h2, h2 {
+    font-size: 1.5rem;
+	font-weight: 500;
+    line-height: 1.75;
 }
 html,
 body {
@@ -71,9 +76,9 @@ table {
 }
 
 table, td, th {
-    border: 1px solid #000;
+    border: 1px solid transparent;
     font-family: inherit;
-    padding: 3px 10px;
+    padding: 5px 10px;
 }
 ::marker {
     color: #40B6FB;
@@ -88,11 +93,17 @@ p {
 /*.wr {*/
     /*padding-top: 52px;*/
 /*}*/
+
+section {
+    padding-right: 16px;
+    padding-left: 16px;
+}
 @media only screen and (max-width: 1024px) {
     .site-main {
         padding: 0px !important;
         flex: 0 0 100% !important;
     }
+
 }
 @media only screen and (max-width: 600px) {
     .wr {
@@ -206,6 +217,7 @@ p {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
 .orange_btn {
     background-color: #FFFFFF;
@@ -240,6 +252,7 @@ p {
     width: 280px;
     padding: 20px 50px;
     text-align: center;
+    color: #FFFFFF;
 }
 .title {
     font-family: inherit;
@@ -266,7 +279,7 @@ p {
 /*baner update*/
 .baner_section {
     position: relative;
-    height: 95vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -288,7 +301,7 @@ p {
     color: #56CCF2;
     /*border: 1px solid #000000;*/
     box-sizing: border-box;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 .baner_descr {
     margin-top: 14px;
@@ -312,9 +325,26 @@ p {
 
 }
 @media only screen and (max-width: 992px) {
-
+    .baner_section {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
 }
 @media only screen and (max-width: 600px) {
+    .baner_buttons {
+        flex-direction: column;
+    }
+    .baner_btn_left {
+        margin-bottom: 20px;
+    }
+    .baner_title {
+        font-size: 34px;
+    }
+    .baner_block {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 
 }
 @media only screen and (max-width: 375px) {
@@ -364,7 +394,7 @@ and (orientation: landscape) {
 
 .about_game {
     position: relative;
-    padding: 100px 0;
+    padding: 100px 16px;
 }
 .about_game_block {
     max-width: 850px;
@@ -381,6 +411,14 @@ and (orientation: landscape) {
 .about_game_img img {
     width: 180px;
     height: auto;
+}
+@media only screen and (max-width: 600px) {
+    .about_game_text {
+        flex-direction: column;
+    }
+    .about_game_img {
+        margin-right: 0px;
+    }
 }
 /*about_game end*/
 
@@ -440,6 +478,13 @@ and (orientation: landscape) {
     margin-top: -50px;
     padding-bottom: 50px;
 }
+
+@media only screen and (max-width: 992px) {
+    .location_content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /*location end*/
 
 
@@ -484,6 +529,20 @@ and (orientation: landscape) {
     margin: 0 auto;
     text-align: center;
 }
+@media only screen and (max-width: 992px) {
+    .save_child_image {
+        flex: 0 0 40%;
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .save_child_descr {
+        flex-direction: column;
+    }
+    .save_child_image {
+        margin-top: -20px;
+    }
+}
 /*save child end*/
 
 
@@ -511,6 +570,18 @@ and (orientation: landscape) {
 }
 .how_to_help_right {
     border: 1px solid transparent;
+}
+@media only screen and (max-width: 600px) {
+    .how_to_help_buttons {
+        align-items: center;
+    }
+    .how_to_help_left {
+        margin-bottom: 20px;
+    }
+    .how_to_help {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 /*how_to_help end*/
 
@@ -540,6 +611,20 @@ and (orientation: landscape) {
     line-height: 150%;
     color: #333333;
     margin-right: 30px;
+}
+@media only screen and (max-width: 992px) {
+    .what_game {
+        padding: 50px 16px;
+    }
+    .what_game_text {
+        margin-right: 10px;
+    }
+    .what_game_block {
+        padding: 0px;
+    }
+    .what_game_info {
+        flex-direction: column;
+    }
 }
 /*what_game end*/
 
@@ -619,7 +704,45 @@ and (orientation: landscape) {
     margin-top: 57px;
     margin-bottom: 100px;
 }
-
+@media only screen and (max-width: 992px) {
+    .timeline_item_content {
+        position: relative;
+    }
+    .timeline_items {
+        flex-direction: column;
+    }
+    .timeline_items:before {
+        display: none;
+    }
+    .timeline_item {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .timeline_item_number:before {
+        left: -11px;
+        top: -9px;
+    }
+    .timeline_item_number span {
+        margin-left: 5px;
+    }
+    .timeline_items:after {
+        width: 1px;
+        height: 100%;
+        top: 0px;
+        left: 10px;
+    }
+    .timeline_item_text {
+        padding: 0px 0 20px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .timeline_item_title {
+        padding: 0px 0 20px 40px;
+        position: absolute;
+        top: 0;
+    }
+}
 
 /*timeline end*/
 
@@ -657,4 +780,225 @@ and (orientation: landscape) {
     text-align: center;
     color: #444444;
 }
+@media only screen and (max-width: 600px) {
+    .registration {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
 /*registration end*/
+
+
+
+
+
+/*partners*/
+.partners {
+    padding: 50px 0;
+}
+.partners_items {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.partners_item {
+    width: 320px;
+}
+.partner_logo img {
+    height: 50px;
+    width: auto;
+}
+.partner_link {
+    padding: 19px 0 15px 0;
+}
+.partner_link a {
+    color: #40B6FB;
+}
+.partner_descr {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    color: #000000;
+}
+@media only screen and (max-width: 600px) {
+    .partners {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .partners_items {
+        flex-direction: column;
+    }
+    .partners_item {
+        width: 100%;
+        padding: 40px 16px 0px;
+        text-align: center;
+    }
+    .partners_item:first-child {
+        width: 100%;
+        padding: 0px 16px 0px;
+    }
+}
+/*partners end*/
+
+
+/*teams*/
+.teams {
+    padding: 100px 0;
+}
+.add_members_content {
+    margin-top: 150px;
+}
+.add_members_form {
+    padding-top: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.add_members_title {
+    text-align: center;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 130%;
+    color: #333333;
+    margin-bottom: 41px;
+}
+.add_members_title span {
+    color: #56CCF2;;
+}
+.add_members_subtitle {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #40B6FB;
+    margin-bottom: 41px;
+}
+.teams_block th {
+    text-align: left;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #96B3C3;
+    margin-bottom: 16px;
+
+}
+.teams_block td {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+}
+/*teams end*/
+/*form*/
+.add_members_content {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0px 16px 100px;
+}
+.acf-input-wrap input {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 50px;
+
+}
+.acf-fields > .acf-field {
+    border-top: transparent solid 1px !important;
+}
+.acf-field[data-width] + .acf-field[data-width] {
+    border-left: 1px solid transparent !important;
+}
+.acf-form-submit {
+    text-align: center;
+}
+.acf-form-submit input {
+    outline: none;
+    padding: 0.5rem 0 !important;
+    margin: 0 16px !important;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    word-wrap: break-word;
+    font-style: normal;
+    white-space: normal;
+    justify-content: center;
+    word-break: break-word;
+    font-weight: 500;
+    letter-spacing: 0px;
+    transition: all 0.3s ease-in-out;
+    border-width: 2px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 30px;
+    background-color: #40B6FB !important;
+    border-color: #40B6FB !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    display: -webkit-inline-flex;
+    -webkit-align-items: center;
+    cursor: pointer;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+}
+.label_gamers {
+    text-align: center;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #333333;
+}
+.label_gamers span {
+    color: #40B6FB;
+}
+.acf-field .acf-label label {
+    margin: 0 0 -15px 20px !important;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+.gender_radio .acf-radio-list.acf-hl {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.acf-field input[type=text], .acf-field input[type=password], .acf-field input[type=date], .acf-field input[type=datetime], .acf-field input[type=datetime-local], .acf-field input[type=email], .acf-field input[type=month], .acf-field input[type=number], .acf-field input[type=search], .acf-field input[type=tel], .acf-field input[type=time], .acf-field input[type=url], .acf-field input[type=week], .acf-field textarea, .acf-field select {
+    padding: 4px 18px !important;
+}
+.acf-label label {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    color: #333333;
+}
+@media only screen and (max-width: 992px) {
+    .add_members_form {
+        background-size: contain;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .acf-fields > .acf-field {
+        width: 100% !important;
+    }
+}
+/*form end*/

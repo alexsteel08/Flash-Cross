@@ -9,9 +9,6 @@
         <div class="footer-col">
             <?php dynamic_sidebar('footer_menu3'); ?>
         </div>
-        <div class="footer-col">
-            <?php dynamic_sidebar('footer_menu4'); ?>
-        </div>
     </div>
     <?php if( get_field('copyright','option') ): ?>
         <div class="copyright">

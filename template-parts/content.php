@@ -31,6 +31,14 @@
         <?php if( get_row_layout() == 'registration' ): ?>
             <?php get_template_part( 'template-parts/blocks/registration' );?>
         <?php endif; ?>
+
+        <?php if( get_row_layout() == 'teams' ): ?>
+            <?php get_template_part( 'template-parts/blocks/teams' );?>
+        <?php endif; ?>
+
+        <?php if( get_row_layout() == 'partners' ): ?>
+            <?php get_template_part( 'template-parts/blocks/partners' );?>
+        <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
 

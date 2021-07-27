@@ -1,4 +1,4 @@
-<section class="how_to_help" <?php if( get_sub_field('how_to_help_bg') ): ?> style="background-image: url(<?php the_sub_field('how_to_help_bg'); ?>)"<?php endif; ?>>
+<section id="how_to_help" class="how_to_help" <?php if( get_sub_field('how_to_help_bg') ): ?> style="background-image: url(<?php the_sub_field('how_to_help_bg'); ?>)"<?php endif; ?>>
     <div class="how_to_help_block">
         <div class="how_to_help_content">
             <?php if( get_sub_field('how_to_help_title') ): ?>

@@ -1,4 +1,4 @@
-<section class="what_game">
+<section id="what_game" class="what_game">
     <div class="what_game_block content_width">
         <div class="what_game_content">
             <div class="what_game_info">
